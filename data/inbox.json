@@ -1,0 +1,14 @@
+{
+    "success": true,
+    "mails": [
+        {
+            "id": 1,
+			"login": "solejtc",
+            "subject": "sicanda",
+            "text": "iceanothers@gmail.com",
+			"from": "solejtc",
+            "ondate": "12-09-2012",
+            "status": "Unread"
+        }
+    ]
+}

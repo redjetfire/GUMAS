@@ -1,0 +1,15 @@
+{
+    success: true,
+    categories: [
+        {id: 1, category: 'Test1', parent: 0},
+        {id: 2, category: 'Test2', parent: 1},
+        {id: 3, category: 'Test3', parent: 1},
+        {id: 4, category: 'Test4', parent: 1},
+        {id: 5, category: 'Test5', parent: 1},
+        {id: 6, category: 'Test6', parent: 0},
+        {id: 7, category: 'Test7', parent: 0},
+        {id: 8, category: 'Test8', parent: 0},
+        {id: 9, category: 'Test9', parent: 2},
+        {id: 10, category: 'Test10', parent: 2},
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "success": true,
+    "mails": [
+        {
+            "id": 1,
+			"login": "sonny",
+            "subject": "GUMAS Project",
+            "text": "My Inbox work 1111",
+			"mailto": "sonny",
+            "ondate": "31-08-2012"
+        },
+        {
+            "id": 2,
+            "login": "jetfire",
+            "subject": "GUMAS Project new Content",
+            "text": "My Inbox work 1111",
+            "mailto": "solejtc",
+            "ondate": "09-09-2012"
+        },
+        {
+            "id": 3,
+            "login": "jetfire",
+            "subject": "GUMAS Project bug Fixed",
+            "text": "My Inbox work 1111",
+            "mailto": "maxim",
+            "ondate": "15-08-2012"
+        },
+        {
+            "id": 4,
+            "login": "jetfire",
+            "subject": "GUMAS Project bug Fixed jetfire",
+            "text": "My Inbox work 1111",
+            "mailto": "maxim",
+            "ondate": "15-08-2012"
+        },
+        {
+            "id": 5,
+            "login": "sonny",
+            "subject": "GUMAS Project bug Fixed sonny",
+            "text": "My Inbox work 1111",
+            "mailto": "maxim",
+            "ondate": "15-08-2012"
+        },
+        {
+            "id": 6,
+            "login": "solejtc",
+            "subject": "GUMAS Project bug Fixed solejtc",
+            "text": "My Inbox work 1111",
+            "mailto": "maxim",
+            "ondate": "15-08-2012"
+        },
+        {
+            "id": 7,
+            "login": "jetfire",
+            "subject": "GUMAS Project bug Fixed",
+            "text": "My Inbox work 1111",
+            "mailto": "maxim",
+            "ondate": "15-08-2012"
+        },
+        {
+            "id": 8,
+            "login": "jetfire",
+            "subject": "GUMAS Project bug Fixed",
+            "text": "My Inbox work 1111",
+            "mailto": "maxim",
+            "ondate": "15-08-2012"
+        },
+        {
+            "id": 9,
+            "login": "jetfire",
+            "subject": "GUMAS Project bug Fixed",
+            "text": "My Inbox work 1111",
+            "mailto": "maxim",
+            "ondate": "15-08-2012"
+        },
+        {
+            "id": 10,
+            "login": "jetfire",
+            "subject": "GUMAS Project bug Fixed",
+            "text": "My Inbox work 1111",
+            "mailto": "maxim",
+            "ondate": "15-08-2012"
+        },
+        {
+            "id": 11,
+            "login": "jetfire",
+            "subject": "GUMAS Project bug Fixed",
+            "text": "My Inbox work 1111",
+            "mailto": "maxim",
+            "ondate": "15-08-2012"
+        },
+        {
+            "id": 12,
+            "login": "jetfire",
+            "subject": "GUMAS Project bug Fixed",
+            "text": "My Inbox work 1111",
+            "mailto": "maxim",
+            "ondate": "15-08-2012"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "success": true,
+    "teams": [
+        {
+            "id": 1,
+            "teamid": "1",
+			"teamname": "redzerg",
+            "teambirth": "09/01/2012",
+            "teamleader": "jetfire",
+            "teamlogo": "resources/team-images/redzerg.png"
+        },
+        {
+            "id": 2,
+            "teamid": "2",
+            "teamname": "gumas",
+            "teambirth": "08/15/2012",
+			"teamleader": "solejtc",
+            "teamlogo": ""
+        }
+    ]
+}

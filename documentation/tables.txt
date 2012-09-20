@@ -1,0 +1,68 @@
+login/regist_table:
+- id 
+- login
+- password
+- email
+- role
+
+
+
+user_info:
+- id
+- name
+- surname
+- location
+- city
+- photo
+- join date
+- birth
+- sex
+- aboutme
+
+
+
+
+contacts:
+- id
+- skype
+- icq
+- YaHoo
+- MSN
+- Mobile phone
+- Land phone
+- Web site
+- Contact Email
+
+
+
+
+Freelancer_info_table:
+- id
+- team_id
+- skills
+- english_level
+- rating
+- feedback
+- portfolio
+- category
+- sallary
+- tests
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

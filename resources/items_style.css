@@ -1,0 +1,223 @@
+/* PROJECTS !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.thumb-wrap {
+	position:relative; 
+	margin:2px 7px 2px 7px; 
+	border:1px solid #ccc; 
+	border-radius:5px; 
+	background:#f5f5f5;  
+	overflow:hidden;
+	}
+	
+.thumb-wrap a {
+	color:#444;
+	text-decoration:none;
+	}
+	
+.thumb-wrap a:hover {
+	color:#777;	
+	}
+	
+.thumb-wrap a:active {
+	color:#444;	
+	}
+	
+.thumb-wrap a:focus {
+	color:red;	
+	}
+	
+.keeper {
+	padding:5px;
+	}
+	
+.description {
+	width:70%; 
+	overflow:hidden; 
+	margin:0 10px 0 10px; 
+	height:62px; 
+	padding-right:10px; 
+	border-right:1px solid #ccc; 
+	font-weight:normal; 
+	float:left;	
+	}
+	
+.description img {
+	float:left; 
+	margin-right:8px;	
+	}
+	
+.description h1 {
+	margin-bottom: 5px;	
+	padding:0;
+	}
+	
+.budget {
+	float:left; 
+	margin-right:10px; 
+	max-height:62px; 
+	width:14%;
+	min-width:90px;
+	}
+	
+.info {
+	float:left;
+	max-width:15%; 
+	min-width:90px;
+	}
+	
+.sel_item {
+	width:300px;
+	background:red;
+	}
+
+/*FREELANCERS ITEMS STYLES*/
+
+.fthumb_wrap {
+	border:1px solid #ccc;
+	margin:2px 7px 2px 7px;
+	}
+	
+
+	
+#a {
+	text-decoration:none;
+	}
+	
+.fkeeper {
+	
+	}
+	
+#img_placeholder {
+	margin:5px 10px 0 5px;
+	width:80px;
+	height:100px;
+	float:left;
+	}
+	
+#img_placeholder img {
+	width:80px;
+	height:80px;	
+	}
+	
+#fdescription {
+	margin:5px;	
+	max-width:85%;
+	float:left;
+	}
+	
+#container {
+	max-width:85%;
+	float:left;	
+	padding:5px 15px 5px 5px;
+	}
+	
+#skills {
+	width:15%;
+	height:100px;
+	float:left;
+	padding:5px;
+	}
+/* PROJECTS END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+/* INBOX !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+.mailblock
+{
+    position:relative;
+    width: 568px;
+    height: 45px;
+    overflow: hidden;
+    margin:5px 4px 5px 4px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    background:#f5f5f5;
+}
+
+.mailblock h5
+{
+    padding:0;
+    margin:0;
+}
+
+.mailblock a {
+    color:#444;
+    text-decoration:none;
+}
+
+.mailblock a:hover {
+    color:#777;
+}
+
+.mailblock a:active {
+    color:#444;
+}
+
+.mailblock a:focus {
+    color:red;
+}
+
+.mailpic
+{
+    float:left;
+    width:50px;
+    height: 45px;
+}
+
+.mailpic img {
+    margin-top:8px;
+    margin-left:6px;
+}
+
+.mailsubject
+{
+    float:left;
+    width:280px;
+    height: 45px;
+    line-height: 45px;
+    overflow: hidden;
+}
+
+.mailfrom
+{
+    float:left;
+    padding-top: 5px;
+    width:65px;
+    height: 40px;
+}
+
+.maildate
+{
+    float:left;
+    padding-top: 5px;
+    width:75px;
+    height: 40px;
+}
+
+.mailstatus
+{
+    float:left;
+    margin-left: 15px;
+    padding-top: 5px;
+    width:65px;
+    height: 40px;
+}
+
+button.trash-icon {
+    background-image: url(my-images/icons/inbox/Black_Trash.png);
+    background-repeat: no-repeat;
+}
+
+.trash-icon {
+    background-image: url(my-images/icons/inbox/Black_Trash.png);
+    background-repeat: no-repeat;
+}
+
+button.compose-icon {
+    background-image: url(my-images/icons/inbox/email.png);
+    background-repeat: no-repeat;
+}
+
+.compose-icon {
+    background-image: url(my-images/icons/inbox/email.png);
+    background-repeat: no-repeat;
+}
+/* INBOX END !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */

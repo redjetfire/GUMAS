@@ -1,0 +1,7 @@
+Ext.define('GUMAS.view.content.Tests',{
+	extend: 'Ext.panel.Panel',
+	alias: 'widget.tests',
+	
+	title: 'Tests',
+	layout: 'fit'
+	});

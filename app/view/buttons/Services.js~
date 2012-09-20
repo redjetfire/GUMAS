@@ -1,0 +1,10 @@
+Ext.define('GUMAS.view.buttons.Services',{
+	extend: 'Ext.button.Button',
+	alias: 'widget.servicesBtn',
+	
+	text: 'Tests',
+	action: 'Services',
+	width: '12%',
+	minWidth: 50,
+	height: 40
+	});

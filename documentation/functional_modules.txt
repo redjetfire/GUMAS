@@ -1,0 +1,24 @@
+Customer Account Module: provides possibility to login and regist in application
+
+Customer Profile Module: provides possibility to edit customer information
+
+Categories Module: provides possibility to choose category of projects / freelancers / tests
+
+Projects Catalog Module: provides search for projects and project details
+
+Projects Cart Module: provides possibility to add to cart for future using / remove from cart
+
+Freelancers Catalog Module: provides search for freelancers and their details
+
+Freelancers Advanced Search Module: provides more efficient search of freelancers
+
+Create Project Module: provides possibility to add customers projects
+
+Tests Module: provides possibility to take tests for freelancers to raise their raiting
+
+Contact Administration Module: provides possibility to send messages to administration
+
+Team Members Module: provides possibility to know information about team members
+
+Messaging Module: provides possibility to send messages to users
+

@@ -1,0 +1,67 @@
+Ext.define('GUMAS.controller.Navigation',{
+	extend: 'Ext.app.Controller',
+	
+	views: [
+        'buttons.CreateProject',
+		'buttons.ViewAllJobs',
+		'buttons.FindFreelancers',
+		'buttons.Tests',
+		'buttons.HowToUse',
+		'buttons.ContactUs',
+		'content.Projects',
+		'content.FindFreelancers',
+		'content.Tests',
+		'content.HowToUse',
+		'content.ContactUs',
+        'content.CreateProject'
+		],
+		
+	init: function(){
+		this.control({
+            'projectButton[action=CreateProject]': {
+                click: this.CreateProject
+            },
+			'jobsBtn[action=ViewAllJobs]': {
+				click: this.ViewAllJobs
+				},
+			'freelancersBtn[action=FindFreelancers]': {
+				click: this.FindFreelancers
+				},
+			'servicesBtn[action=Tests]': {
+				click: this.Tests
+				},
+			'useBtn[action=HowToUse]': {
+				click: this.HowToUse
+				},
+			'contactBtn[action=ContactUs]': {
+				click: this.ContactUs
+				}
+			})
+			
+		},
+		
+	ViewAllJobs : function() {
+		 Ext.getCmp('contentBlock').getLayout().setActiveItem(0);
+		},
+	
+	FindFreelancers : function() {
+		 Ext.getCmp('contentBlock').getLayout().setActiveItem(1);
+		},
+		
+	Tests : function() {
+		 Ext.getCmp('contentBlock').getLayout().setActiveItem(2);
+		},
+	
+	HowToUse : function() {
+		 Ext.getCmp('contentBlock').getLayout().setActiveItem(3);
+		},
+	
+	ContactUs : function() {
+		 Ext.getCmp('contentBlock').getLayout().setActiveItem(4);
+		},
+
+    CreateProject: function(){
+        Ext.getCmp('contentBlock').getLayout().setActiveItem(6);
+    }
+		
+	});

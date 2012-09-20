@@ -1,0 +1,14 @@
+.x-tab-bar { 
+    position : absolute; 
+    /*
+        due to bug, report here:
+        http://www.sencha.com/forum/showthread.php?154251-TabBar-positioning-and-Panel-border-CSS-problems-in-4.0.7
+     */
+}
+
+.x-tool img{
+    background-image: url('../images/tools/tool-sprites.png') !important;
+    /*
+        due to use .png without .gif
+     */
+}

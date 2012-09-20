@@ -1,0 +1,161 @@
+LOGICaaaaaaa
+
+LEGEND:
+
+USER TYPES:
+
+g - guest
+u - user
+m - moderator
+a - admin
+s - superadmin
+
+USER RULES:
+
+"+" - all, except hierarchy moderator->admin's->superadmin's
+"-" - some (Like moderators can moderate different categories)
+"?" - defined in settings, etc.
+"_" - only AUTHOR can do this
+"=" - AUTHOR and targets (Like private messages)
+
+EXAMPLES:
+
+[g,u,m,a,s] - Means that everyone can do this
+[u,m,a,s] - Only logged in users
+[m,a,s] - Only moderators and adminis
+[a,s] - Only adminis
+[s] - Only superadmins
+[m-,a,s] - Means that all admins and only modreators of current category category can do this (Like block/unblock posts, view logs, etc.)
+[m,a+,s+] - Means that all admins can view others info (Like private messages, favourites, etc.)
+
+=================================================================
+
+users.rb
+	-[g,a,s] Register
+	-[g,a,s] Login
+	-[g,a,s] oAuth (Login using Facebook, Vkontakte, Twitter, etc.)
+	-[g,a,s] Forgot password
+	-[u,m,a,s] View Profile
+	-[u_,m_,a+,s+] Edit Profile
+	-[m,a,s] Unblock
+	-[m,a,s] Block
+	-[a,s] Remove
+	-[u_,m_,a,s] Manage email subscription
+
+category.rb
+	-[g,u,m,a,s] View
+	-[a,s] Add
+	-[a,s] Edit
+	-[a,s] Block
+	-[a,s] Unblock
+	-[a,s] Remove
+
+posts.rb [posts]
+	-[g?,u?,m-,a,s] View
+	-[u,m,a,s] Add
+	-[u,m,a+,s+] Edit
+	-[m-,a,s] Block
+	-[m-,a,s] Unblock
+	-[a,s] Remove
+
+privatemessaging.rb [posts]
+	-[u=,m=,a+,s+] View
+	-[u,m,a,s] Add
+	-[u_,a,s] Edit
+	-[a,s] Block
+	-[a,s] Unblock
+	-[s] Remove
+
+reports.rb [posts]
+	-[u_,m-,a+,s+] View
+	-[u,m,a,s] Add
+	-[a,s] Edit
+	-[m-,a,s] Block
+	-[m-,a,s] Unblock
+	-[a,s] Remove
+
+comments.rb
+	-[g,u,m,a,s] View
+	-[u,m,a,s] Add
+	-[u,m,a+,s+] Edit
+	-[m,a,s] Block
+	-[m,a,s] Unblock
+	-[a,s] Remove
+
+finance.rb
+	-[u_,m-,a-,s+] View
+	-[u_,m_,a_,s+] Pay
+	-[u_,m_,a_,s+] Withdraw
+	-[u_,m_,a_,s+] Convert
+	-[s] Percentage change
+	-[m,a,s] Unblock
+	-[m,a,s] Block
+	-[s] Edit
+	-[s] Remove
+
+logs.rb
+	-[m-,a,s] View
+	-[m-,a,s] Compare
+	-[s] Clear
+
+statistics.rb
+	-[a,s] View
+	-[a,s] Demographic
+	-[a,s] Age
+	-[a,s] Browser
+	-[a,s] Screen resolution
+	-[s] Clear statistics
+
+tags.rb
+	-[g,u,m,a,s] View
+	-[u,m,a,s] Add
+	-[u_,m,a,s] Edit
+	-[m-,a,s] Block
+	-[m-,a,s] Unblock
+	-[a,s] Remove
+
+favourites.rb
+	-[u?,m?,a+,s+] View
+	-[u_,m_,a+,s+] Add
+	-[u_,m_,a+,s+] Edit
+	-[a,s] Remove
+
+ratings.rb
+	-[u,m,a,s] Sum
+	-[u_,m-,a,s] One
+	-[u=,m=,a,s] Add [only when project completed]
+	-[a+,s+] Edit
+	-[m-,a,s] Block
+	-[m-,a,s] Unblock
+	-[a,s] Remove
+
+search.rb
+	-[g,u,m,a,s] Simple search
+	-[u,m,a,s] Advanced search
+	-[g,u,m,a,s] Filter
+
+mail.rb
+	-[m-,a,s] Send single mail
+	-[a,s] Send multiple mail
+
+images.rb
+	-[u?,m?-,a,s] View
+	-[u,m,a,s] Add
+	-[u,m,a,s] Edit
+	-[m-,a,s] Block
+	-[m-,a,s] Unblock
+	-[a,s] Remove
+
+widgets.rb
+	-[u?,m?,a,s] View
+	-[a,s] Add
+	-[a,s] Edit
+	-[a,s] Remove
+
+rss.rb
+	-[g,u,m,a,s] View
+	-[a,s] Manage
+
+partnership.rb
+	-[u_,m_,a,s] Generate partner link
+	-[u_,m_,a,s] Send invite
