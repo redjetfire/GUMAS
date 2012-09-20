@@ -191,8 +191,7 @@ Ext.define('GUMAS.controller.Profile', {
         
         //Disable buttons after logout
         Ext.getCmp('testsBtn').disable();
-        Ext.getCmp('projectButton').disable();
-        Ext.getCmp('contactBtn').disable();
+        Ext.getCmp('projectButton').disable()
 },
 
     viewInbox: function(){
