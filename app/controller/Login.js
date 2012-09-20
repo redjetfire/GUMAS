@@ -42,8 +42,7 @@ Ext.define('GUMAS.controller.Login', {
             
             //Enable buttons after login
             Ext.getCmp('testsBtn').enable();
-            Ext.getCmp('projectButton').enable();
-            Ext.getCmp('contactBtn').enable();
+            Ext.getCmp('projectButton').enable()
         }
         else
         {

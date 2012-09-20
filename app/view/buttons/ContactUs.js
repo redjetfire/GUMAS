@@ -7,6 +7,5 @@ Ext.define('GUMAS.view.buttons.ContactUs',{
 	id: 'contactBtn',
 	width: '12%',
 	minWidth: 65,
-	height: 40,
-	disabled: true	
+	height: 40
 	});
