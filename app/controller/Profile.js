@@ -65,7 +65,7 @@ Ext.define('GUMAS.controller.Profile', {
         objTwo = objTwo.next('displayfield').setValue(data.yahoo);
         objTwo = objTwo.next('displayfield').setValue(data.icq);
 		//-----------------------------------------------
-        Ext.getCmp('usernameProfile').setText(value);
+        Ext.getCmp('usernameProfile').setText(value.toUpperCase());
         },
 
     viewMyTeam: function() {
@@ -99,12 +99,6 @@ Ext.define('GUMAS.controller.Profile', {
                 Ext.getCmp('teaminviteBtn').enable();
                 Ext.getCmp('teamdismissBtn').enable();
                 Ext.getCmp('teamdissolveBtn').enable();
-            }
-            else
-            {
-                Ext.getCmp('teaminviteBtn').disable();
-                Ext.getCmp('teamdismissBtn').disable();
-                Ext.getCmp('teamdissolveBtn').disable();
             }
             win.down('form');
         }

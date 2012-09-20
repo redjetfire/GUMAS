@@ -160,7 +160,7 @@ Ext.define('GUMAS.view.Main' ,{
             region: 'south',
             title: 'Footer',
             collapsible: false,
-            html: 'Copyright 2012 Group 071 WebUI',
+            html: '&copy; 2012 WebUI 071',
             split: true,
             height: 30,
             minHeight: 30,

@@ -13,6 +13,7 @@ Ext.define('GUMAS.view.team.Team', {
         },
     height: 600,
     width: 800,
+    resizable: false,
     title: 'Team',
 
     initComponent: function() {
@@ -42,6 +43,7 @@ Ext.define('GUMAS.view.team.Team', {
                         {
                             xtype: 'button',
                             text: 'Invite',
+                            disabled: true,
                             margin: '0 0 0 5',
                             id: 'teaminviteBtn',
                             action: 'teaminviteWin'
@@ -52,6 +54,7 @@ Ext.define('GUMAS.view.team.Team', {
                         {
                             xtype: 'button',
                             text: 'Dismiss',
+                            disabled: true,
                             id: 'teamdismissBtn',
                             action: 'teamdismissWin'
                         },
@@ -61,6 +64,7 @@ Ext.define('GUMAS.view.team.Team', {
                         {
                             xtype: 'button',
                             text: 'Dissolve',
+                            disabled: true,
                             id: 'teamdissolveBtn',
                             action: 'teamdissolveWin'
                         },

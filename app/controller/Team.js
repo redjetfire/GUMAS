@@ -1,7 +1,7 @@
 Ext.define('GUMAS.controller.Team', {
     extend: 'Ext.app.Controller',
 
-    views: ['team.Team','team.TeamInvite','team.TeamDismiss'],
+    views: ['team.Team','team.TeamInvite','team.TeamDismiss','team.TeamDissolve'],
     stores: ['Users'],
     models: ['User'],
 
@@ -19,6 +19,13 @@ Ext.define('GUMAS.controller.Team', {
             'dismissmember button[action=dismiss]':{
                 click: this.dismissMember
             },
+            'teamview button[action=teamdissolveWin]':{
+                click: this.dissolveTeamWin
+            },
+            'dissolveteam button[action=dissolve]':{
+                click: this.dissolveTeam
+            },
+
         });
     },
 
@@ -101,31 +108,18 @@ Ext.define('GUMAS.controller.Team', {
             Ext.MessageBox.alert("Noob","Open your Eyes!!! No such User")
         }
         store.clearFilter(true);
+    },
+
+    dissolveTeamWin: function()
+    {
+        var view = Ext.widget('dissolveteam');
+        view.down('form');
+    },
+
+    dissolveTeam: function()
+    {
+        console.log("Team dissolved successfully !");
+        Ext.getCmp('teampanel').close();
+        Ext.getCmp('teamdissolve').close();
     }
 });
-
-//if((data.team.toLowerCase() == data1.team.toLowerCase()) && (data1.teamowner.toLowerCase() == data.team.toLowerCase()))
-//{
-//    Ext.getCmp('teamdis').close();
-//    Ext.MessageBox.alert("Success","User " + data.login + " was successfully kicked.");
-//    console.log("Dismiss SUCCESS KICK RUN");
-//}
-//if((data.team.toLowerCase() == data1.team.toLowerCase()) && (data1.teamowner.toLowerCase() != data.team.toLowerCase()))
-//{
-//    Ext.MessageBox.alert("Error","You aren't " + data.team.toUpperCase() + " Team leader.");
-//    console.log("Dismiss NOT A TEAM LEADER RUN");
-//}
-//if(data.team.toLowerCase() != data1.teamowner.toLowerCase())
-//{
-//    Ext.MessageBox.alert("Error","User " + data.login + " is not a member of " + data1.teamowner.toUpperCase() + " Team.");
-//    console.log("Dismiss NOT A TEAM MEMBER RUN");
-//}
-//if(data.login.toLowerCase() == data1.login.toLowerCase())
-//{
-//    Ext.MessageBox.alert("Error","You can not kick yourself.");
-//    console.log("Dismiss Leader KICK Leader");
-//}
-//else
-//{
-//    Ext.MessageBox.alert("Noob","Open your Eyes!!!")
-//}
