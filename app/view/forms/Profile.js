@@ -119,15 +119,17 @@ Ext.define('GUMAS.view.forms.Profile', {
                             xtype: 'label',
                             id:'usernameProfile',
                             style: 'font-weight: bold;\r\nfont-size:10px;',
-                            margins: '0 0 0 10'
+                            margins: '0 0 0 10',
+                            width: 150
                         },
                         {
                             xtype: 'tbspacer',
-                            width: '72%'
+                            width: '45%'
                         },
                         {
                             xtype: 'button',
                             action: 'editProfile',
+                            id: 'profilebtnedit',
                             width: 75,
                             text: 'Edit'
                         }

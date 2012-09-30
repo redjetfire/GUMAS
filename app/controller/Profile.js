@@ -178,6 +178,10 @@ Ext.define('GUMAS.controller.Profile', {
         {
             Ext.getCmp('teampanel').close();
         }
+        if(Ext.getCmp('teammemberswindow') != null)
+        {
+            Ext.getCmp('teammemberswindow').close();
+        }
         Ext.getCmp('profMenu').hide();
         Ext.getCmp('prof_bar').getLayout().setActiveItem(0);
         Ext.getCmp('contentBlock').getLayout().setActiveItem(0);

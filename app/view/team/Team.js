@@ -210,17 +210,7 @@ Ext.define('GUMAS.view.team.Team', {
                             flex: 1,
                             items: [
                                 {
-                                    xtype: 'gridpanel',
-                                    id: 'teamMembers',
-                                    store: 'Users',
-                                    columns:
-                                        [
-                                            {header : 'Members', flex: 2, dataIndex : 'login'},
-                                            {header : 'Status', flex: 1, dataIndex : 'status'},
-                                            {header : 'Rating', flex: 1, dataIndex: 'rating'}
-                                        ],
-                                    preventHeader: true,
-                                    autoScroll: true
+                                    xtype: 'teammemberslist'
                                 }
                             ]
                         }
